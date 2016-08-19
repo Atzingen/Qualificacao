@@ -1,0 +1,7 @@
+\lstset{language=Python}
+\begin{lstlisting}
+    # alteracao do loop principal com vetorizacao
+	for l in range(1,3000):
+		J2[1:n-2] = (J[0:n-3] + J[2:n-1] + (deltax*deltax*f[1:n-2]))/2
+		J[1:n-2] = J[1:n-2] + k*(J2[1:n-2] - J[1:n-2])
+\end{lstlisting}

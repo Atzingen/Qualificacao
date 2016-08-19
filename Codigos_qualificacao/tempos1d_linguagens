@@ -1,0 +1,201 @@
+fortran
+Time =  7.2120000E-03 seconds.
+Time =  7.2020004E-03 seconds.
+Time =  7.1860012E-03 seconds.
+Time =  7.1780011E-03 seconds.
+Time =  7.1839988E-03 seconds.
+Time =  7.1900003E-03 seconds.
+Time =  7.1879998E-03 seconds.
+Time =  7.1810000E-03 seconds.
+Time =  7.1649998E-03 seconds.
+Time =  7.1839988E-03 seconds.
+Time =  7.1820021E-03 seconds.
+Time =  7.1839988E-03 seconds.
+Time =  7.1719959E-03 seconds.
+Time =  7.1789995E-03 seconds.
+Time =  7.1830004E-03 seconds.
+Time =  7.1830004E-03 seconds.
+Time =  7.1879998E-03 seconds.
+Time =  7.1789920E-03 seconds.
+Time =  7.1819872E-03 seconds.
+Time =  7.1750134E-03 seconds.
+
+
+cpp
+Tempo 0.007189
+Tempo 0.007169
+Tempo 0.007175
+Tempo 0.007156
+Tempo 0.007163
+Tempo 0.007179
+Tempo 0.007175
+Tempo 0.00718
+Tempo 0.007156
+Tempo 0.007172
+Tempo 0.00717
+Tempo 0.007176
+Tempo 0.007156
+Tempo 0.007165
+Tempo 0.007154
+Tempo 0.007171
+Tempo 0.007163
+Tempo 0.007156
+Tempo 0.007174
+Tempo 0.007164
+
+
+c
+ tempo: 0.007304 
+ tempo: 0.007282 
+ tempo: 0.007265 
+ tempo: 0.007237 
+ tempo: 0.007279 
+ tempo: 0.007274 
+ tempo: 0.007252 
+ tempo: 0.007281 
+ tempo: 0.007248 
+ tempo: 0.007272 
+ tempo: 0.007254 
+ tempo: 0.007258 
+ tempo: 0.007251 
+ tempo: 0.007285 
+ tempo: 0.007249 
+ tempo: 0.007251 
+ tempo: 0.007249 
+ tempo: 0.007268 
+ tempo: 0.007268 
+ tempo: 0.007253 
+
+python - numpy
+0.0716300010681
+0.0713617801666
+0.0712459087372
+0.0698788166046
+0.0703988075256
+0.0707249641418
+0.0712180137634
+0.0707931518555
+0.0700919628143
+0.0695641040802
+0.0706539154053
+0.070739030838
+0.069769859314
+0.0700600147247
+0.0707252025604
+0.0714819431305
+0.0707058906555
+0.0709090232849
+0.0698561668396
+0.0706942081451
+
+python - regular
+1.50816607475
+1.51426911354
+1.52104401588
+1.51372098923
+1.50528597832
+1.5150539875
+1.49937200546
+1.50795888901
+1.50403785706
+1.50438094139
+1.50694680214
+1.504997015
+1.50333786011
+1.5157828331
+1.50318002701
+1.49791002274
+1.50270414352
+1.50010299683
+1.49404907227
+1.50137400627
+
+octave
+Elapsed time is 7.71113 seconds.
+Elapsed time is 7.6777 seconds.
+Elapsed time is 7.7336 seconds.
+Elapsed time is 7.69947 seconds.
+Elapsed time is 7.70877 seconds.
+Elapsed time is 7.70575 seconds.
+Elapsed time is 7.7358 seconds.
+Elapsed time is 7.65364 seconds.
+Elapsed time is 7.66415 seconds.
+Elapsed time is 7.70064 seconds.
+Elapsed time is 7.66025 seconds.
+Elapsed time is 7.68561 seconds.
+Elapsed time is 7.64058 seconds.
+Elapsed time is 7.96595 seconds.
+Elapsed time is 7.62766 seconds.
+Elapsed time is 7.62659 seconds.
+Elapsed time is 7.69844 seconds.
+Elapsed time is 7.89911 seconds.
+Elapsed time is 7.69994 seconds.
+Elapsed time is 7.68216 seconds.
+Elapsed time is 7.87732 seconds.
+
+Octave - vetorizado
+Elapsed time is 0.176282 seconds.
+Elapsed time is 0.174104 seconds.
+Elapsed time is 0.174211 seconds.
+Elapsed time is 0.172921 seconds.
+Elapsed time is 0.173117 seconds.
+Elapsed time is 0.172801 seconds.
+Elapsed time is 0.172686 seconds.
+Elapsed time is 0.172885 seconds.
+Elapsed time is 0.172849 seconds.
+Elapsed time is 0.172698 seconds.
+Elapsed time is 0.17237 seconds.
+Elapsed time is 0.174116 seconds.
+Elapsed time is 0.174301 seconds.
+Elapsed time is 0.173941 seconds.
+Elapsed time is 0.173239 seconds.
+Elapsed time is 0.172288 seconds.
+Elapsed time is 0.172777 seconds.
+Elapsed time is 0.173349 seconds.
+Elapsed time is 0.172338 seconds.
+Elapsed time is 0.17298 seconds.
+
+Matlab - vetorizado
+Elapsed time is 0.066302 seconds.
+Elapsed time is 0.062518 seconds.
+Elapsed time is 0.064148 seconds.
+Elapsed time is 0.064755 seconds.
+Elapsed time is 0.064059 seconds.
+Elapsed time is 0.064127 seconds.
+Elapsed time is 0.064332 seconds.
+Elapsed time is 0.065013 seconds.
+Elapsed time is 0.064441 seconds.
+Elapsed time is 0.064542 seconds.
+Elapsed time is 0.064118 seconds.
+Elapsed time is 0.064288 seconds.
+Elapsed time is 0.064635 seconds.
+Elapsed time is 0.064522 seconds.
+Elapsed time is 0.065105 seconds.
+Elapsed time is 0.064500 seconds.
+Elapsed time is 0.066393 seconds.
+Elapsed time is 0.065180 seconds.
+Elapsed time is 0.064278 seconds.
+Elapsed time is 0.063643 seconds.
+
+Matlab - nao vetorizado
+Elapsed time is 0.057948 seconds.
+Elapsed time is 0.044359 seconds.
+Elapsed time is 0.044286 seconds.
+Elapsed time is 0.043089 seconds.
+Elapsed time is 0.043956 seconds.
+Elapsed time is 0.043772 seconds.
+Elapsed time is 0.043488 seconds.
+Elapsed time is 0.043898 seconds.
+Elapsed time is 0.042899 seconds.
+Elapsed time is 0.043365 seconds.
+Elapsed time is 0.043593 seconds.
+Elapsed time is 0.044233 seconds.
+Elapsed time is 0.043909 seconds.
+Elapsed time is 0.044095 seconds.
+Elapsed time is 0.043870 seconds.
+Elapsed time is 0.043906 seconds.
+Elapsed time is 0.043898 seconds.
+Elapsed time is 0.043446 seconds.
+Elapsed time is 0.043259 seconds.
+Elapsed time is 0.043748 seconds.
+

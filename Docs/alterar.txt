@@ -1,0 +1,6 @@
+- Imagem Controle PID
+- Abreviações
+- Número das páginas
+- Linha vermelha na capa
+- Títulos dos capítulos no padrão
+- Citações

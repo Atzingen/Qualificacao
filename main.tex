@@ -1,0 +1,51 @@
+%  Gustavo Voltani von Atzingen 
+%   Iniciado em: 25/05/2014
+%  
+%  Base para a qualificação e defesa de Doutorado
+%
+%  Referencias de layout utilizadas: 
+%   - https://code.google.com/p/mestre-em-latex/
+%   - 
+
+\documentclass[a4paper,12pt, oneside]{report}
+\include{meta}    % pacote com as informações de configuração retiradas de: mester-em-latex
+
+\begin{document}
+
+    \pagestyle{plain}
+    %\pagestyle{fancyplain}
+    %\pagenumbering{roman}
+    % Parte Pré-Texto
+    \input{PreTexto/Inicio}   % Capa, contra-capa e folha de rosto
+    \doublespacing
+    %\input{PreTexto/Agradecimentos}
+    \input{PreTexto/Resumo}
+    \input{PreTexto/Abstract}
+
+    \cleardoublepage % Processo para inserir a lista de figuras no sumário
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    \listoffigures
+    
+    \cleardoublepage % Processo para inserir a lista de tabelas no sumário
+    \addcontentsline{toc}{chapter}{Lista de Tabelas}    
+    \listoftables    % Lista de tabelas
+    
+    \microtypesetup{protrusion=true}  % Re-habilita protrusão novamente
+    \input{PreTexto/Siglas}
+    \tableofcontents % Sumário
+    % Texto
+    %\pagenumbering{arabic}
+    \include{Texto/Introducao}
+    
+    \include{Texto/Revisao}
+    \include{Texto/Objetivo}
+    \include{Texto/Materiais}
+    \include{Texto/Resultados}
+    \include{Texto/Conclusao}
+    % Pós-Texto
+    \bibliographystyle{abnt2}
+    %\bibliographystyle{apa}%{apalike}  % Formato da bibliografia
+    \bibliography{referencia.bib}    % Arquivo .bib
+    \include{PosTexto/Apendice}  % Apêndice(s)
+
+\end{document}

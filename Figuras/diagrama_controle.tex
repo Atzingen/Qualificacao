@@ -1,0 +1,10 @@
+   \begin{tikzpicture}
+        \node[elli](Processo){Processo};
+        \node[block, below of=Processo](Sensores){Sensores};
+        \node[block, below of=Sensores](Controle){Controle};
+        \node[block, below of=Controle](Atuadores){Atuadores};
+        \path[line](Processo.south) edge (Sensores.north);
+        \path[line](Sensores) edge (Controle);
+        \path[line](Controle) edge (Atuadores);
+        \path[line](Atuadores.east) edge[bend right] (Processo.east);
+    \end{tikzpicture}

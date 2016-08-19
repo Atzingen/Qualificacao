@@ -1,0 +1,85 @@
+\chapter{Apêndice}\label{apêndice}
+
+\section{Diferenças Finitas 1D - Vários métodos}\label{alg:dif1d}
+
+Programa que implementa a solução da equação de difusão de calor em 1 Dimensão utilizando os métodos Direto, Jacobi, Gauss-Seidel, e SOR, utilizando uma condição de contorno que permite encontrar a solução analítica para fins de conparação. Programa implementado em Python2.7
+
+\singlespacing
+\input{PosTexto/diferencasfinitas1d_py}
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Diferenças Finitas - Várias Linguagens}\label{alg:linguagens}
+
+Compara o tempo de execução do mesmo Algoritmo de Diferenças Finitas em várias linguagens (Python, Matlab, Octave, Fortran90 e c). O algoritmo utilizado como teste é o método SOR com 300 iterações.
+
+Fortran:
+
+\singlespacing
+\input{PosTexto/temp1d_sor_f90}
+
+C:
+
+\input{PosTexto/temp1d_sor_c}
+
+Matlab:
+
+\input{PosTexto/temp1d_sor_m}
+
+Matlab Vetorizado:
+
+\input{PosTexto/temp1d_sor_m_vet}
+
+Python:
+
+\input{PosTexto/temp1d_sor_py}
+
+Python vetorizado com Numpy
+
+\input{PosTexto/temp1d_sor_py_vet}
+
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Parâmetro $w$ do método SOR}\label{alg:sor}
+
+O código abaixo apresenta uma varredura de valores de w entre 1 e 2, passando por 200 posições. Para cada valor de w o algoritmo repete as iterações até que se encontre um erro mínimo e então guarda quantas iterações foram necessárias para cada valor de w.
+
+\singlespacing
+\input{PosTexto/sor_find}
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Controle PID}
+
+O código abaixo apresenta a classe PID, que será instanciada no controle. Foi testado com interpretador Python2.7 em Linux Ubuntu 13.10, Windows 7 e Mac OS X e não necessita de nenhuma biblioteca adicional.
+
+\singlespacing
+\input{PosTexto/pid_qualificacao}
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Reconhecimento Visual}\label{alg:camera}
+
+Programa em Python que tira uma foto com a câmera e aplica os filtros e reconhecimento de padrão para identificar se existem e quantos biscoitos estão na entrada do forno. Retorna a quantidade encontrada
+
+Programa para Câmera Raspberry Pi:
+
+\singlespacing
+\input{PosTexto/fotos_raspberry_py}
+\doublespacing
+
+Programa Reconhecimento Imagem:
+
+\singlespacing
+\input{PosTexto/fotos_opencv_py}
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interface}
+
+Interface gráfica em python utilizando a biblioteca PyQt4. 
+
+\singlespacing
+\input{PosTexto/interface_py}
+\doublespacing

@@ -1,0 +1,11 @@
+\lstset{language=Matlab}
+\begin{lstlisting}
+    % parte principal do algoritmo vetorizada
+    for k=1:3000
+	    for i=2:n-1     
+	       Jn   = (J3(i-1) + J3(i+1) + deltax*deltax*f(i))/2;
+	       J3(i) = J3(i) + 1.9*(Jn - J3(i));
+	    end
+    end
+	 
+\end{lstlisting}

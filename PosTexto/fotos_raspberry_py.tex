@@ -1,0 +1,39 @@
+\lstset{language=Python}
+\begin{lstlisting}
+# -*- coding: latin-1 -*-
+'''
+Programa que tira fotos com a camera do raspberry pi e implementa um
+filtro e detecta caracteristicas na imagem.
+'''
+import time
+import os
+import cv2
+import numpy as np
+
+print ' Inicio da captura ... '
+
+biscoito = 0
+arquivo  = 'foto'
+extencao = '.jpg'
+delay    = '-t 100 '
+rotacao  = '-rot 180 '
+tirafoto = 'raspistill '
+final    = 100
+i        = 1
+
+while i <= final:   # Loop que se repete ate chegar biscoitos no inicio da esteira
+    # comando pelo terminal para chamar a camera e salvar imagem
+    os.system(tirafoto + delay + rotacao + '-o ' + arquivo + str(i) + extencao)
+    time.sleep(2) # delay para garantir que a imagem foi salva
+    if len(sys.argv)>1:
+        imagem_nome = sys.argv[1]
+    else:
+        imagem_nome = arquivo + '.' + extencao
+        # Chama a funcao de reconhecimento de imagem
+        biscoito = trata_imagem(imagem_nome,6) 
+    if biscoito > 0: # Caso tenham biscoitos na esteira
+        print 'Iniciar Processo - Bolachas encontradas'
+        # Chama a rotina de inicio do controle
+        break # Sai do loop
+    time.sleep(5)
+\end{lstlisting}

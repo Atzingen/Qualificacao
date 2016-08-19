@@ -1,0 +1,46 @@
+\chapter{Objetivo}\label{objetivo}
+
+Este trabalho tem como objetivo testar a seguinte hipótese:
+
+\textit{"É possível o controle e automação de um forno experimental tipo túnel com informações de sensores e simulação computacional em tempo real utilizando computação embarcada de baixo custo"}
+
+Para testar esta hipótese os seguintes objetivos específicos foram \textcolor{blue}{(azul)} ou serão \textcolor{red}{(vermelho)} desenvolvidos:
+
+\begin{itemize}
+
+    \item \textcolor{blue}{Modelagem matemática do comportamento térmico do forno.}
+  
+    \item \textcolor{blue}{Simulação do comportamento térmico utilizando diferenças finitas.}
+  
+    \begin{itemize}
+    
+        \item \textcolor{blue}{Teste da velocidade de convergência da simulação em função de várias técnicas de diferenças finitas.}
+    
+        \item \textcolor{blue}{Teste de tempo de execução em função da linguagem em que o algoritmo foi implementado.}
+    
+        \item \textcolor{red}{Levantar o perfil térmico do forno com sensores embarcados e comparar com o perfil simulado para validação.}
+    
+    \end{itemize}
+
+    \item \textcolor{blue}{Implementação de um controle PID baseado na resposta da simulação e do conhecimento do perfil de temperatura desejado para o biscoito.}   
+   
+    \begin{itemize}
+    
+        \item \textcolor{blue}{Desenvolvimento de um algoritmo de controle PID em função de Kp, Ki e Kd.} 
+    
+        \item \textcolor{red}{Obter a resposta impulsiva da temperatura no forno e 	calcular a função de transferência (Temperatura em função da 	potência).}
+
+        \item \textcolor{red}{Encontrar o Kp, Ki e Kd ótimos para o controle do forno.}
+        
+        \item \textcolor{red}{Comparar a função de transferência obtida com o perfil térmico em várias situações de operação do forno.}
+    
+    \end{itemize}
+
+    \item \textcolor{blue}{Desenvolvimento de um software com interface gráfica amigável para controle do forno.}
+    
+    \item \textcolor{red}{Teste do sistema em vários dispositivos embarcados.}
+ 
+\end{itemize}
+
+
+

@@ -1,0 +1,59 @@
+\lstset{language=Python}
+\begin{lstlisting}
+# -*- coding: latin-1 -*-
+"""
+Criado em: 03/030/2014
+1 D - SOR - identificacao do melhor fator de OR
+1d heat transfer stead state 
+CC. T(0) = 20 , T(1) = 60 , L = 1m , f(x) = 100e^x  
+Resolucao analítica:  u(x) = (100e - 60)x + 120 - 100e^x 
+"""
+from __future__ import division
+import numpy as np
+import matplotlib.pyplot as plt
+import pylab
+import time
+
+######################## Condicoes do problema #######################
+L0 = 0
+Lf = 1
+n  = 100
+deltax  = (Lf - L0)/n
+deltax2 = (Lf - L0)/(n+1)  # verificar n+1
+x       = np.linspace(L0,Lf,n)
+f       = 100*np.exp(x)
+T0      = 20
+Tf      = 60
+######################## Solucao analítica ##########################
+u = (100*np.exp(1) - 60)*x + 120 - 100*np.exp(x)
+total = np.sum(u)
+
+erro = 1000
+J = T0 + (Tf-T0)*x
+J[0]   = T0
+J[n-1] = Tf
+
+xi = np.linspace(1,1.99,200)
+y  = np.zeros([50,1])
+j = 0
+for k in np.linspace(1,1.99,200):
+	contador = 0
+	erro = 1000
+	J = T0 + (Tf-T0)*x
+	J[0]   = T0
+	J[n-1] = Tf
+	while erro > 100:
+		contador = contador + 1
+		for i in range(1,n-2):
+			Jn = (J[i-1] + J[i+1] + deltax*deltax*f[i] )/2
+			J[i] = J[i] + k*( Jn - J[i] )
+			erro = np.abs(np.sum((J-u)*(u-J)))
+		if contador > 1000:
+			break
+	y[j] = contador
+	j = j + 1
+	print contador, k    
+
+plt.plot(xi,y)
+pylab.show()
+\end{lstlisting}
